@@ -91,3 +91,7 @@ ID   | Name                      | Price    | Stock    | Type
 1    | Logitech MX Master 3S     | $99.99   | 8        | PHYSICAL
 2    | FastAPI Masterclass       | $29.99   | 50       | DIGITAL
 =============================================================
+
+📜 License
+
+Distributed under the MIT License. See LICENSE for details.
