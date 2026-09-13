@@ -23,7 +23,6 @@ The application strictly separates operational concerns into distinct layers:
 
 ## 📂 Project Structure
 
-```text
 python-sql-capstone/
 │
 ├── database/
@@ -71,7 +70,6 @@ Installation & Execution
     Note: The SQLite database file (store.db) is automatically initialized on the first run using database/schema.sql.
 
 🖥️ Application Demo
-Plaintext
 
 =============================================================
          Python + SQL Store Management System        
