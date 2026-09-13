@@ -27,29 +27,39 @@ The application separates operational concerns into distinct layers:
 ## 📂 Project Structure
 
 ```text
-python-sql-capstone/
+Python SQL Capstone/
+│
+├── data/
+│   ├── __init__.py
+│   └── inventory.db           # SQLite database
 │
 ├── database/
 │   ├── __init__.py
-│   ├── schema.sql             # Database table initialization script
-│   └── db_handler.py          # SQLite context manager connection handler
+│   ├── db_handler.py          # Database connection and transaction handling
+│   └── schema.sql             # Database schema
 │
 ├── models/
 │   ├── __init__.py
-│   └── product.py             # Abstract Base Class and concrete subclasses
+│   ├── product.py             # Product domain model
+│   └── transaction.py         # Transaction domain model
 │
 ├── repositories/
 │   ├── __init__.py
-│   └── product_repository.py  # SQL CRUD queries and data mapping
+│   └── product_repository.py  # Product data access and SQL queries
 │
 ├── services/
 │   ├── __init__.py
-│   └── store_service.py       # Business logic, discounts, and custom errors
+│   └── store_service.py       # Business logic and store operations
 │
-├── main.py                    # Terminal UI application entrypoint
+├── utils/
+│   ├── __init__.py
+│   └── helpers.py             # Reusable utility functions
+│
+├── config.py                  # Application configuration
+├── main.py                    # Application entrypoint
 ├── .gitignore
 ├── LICENSE
-└── README.md
+└── readme.md
 ```
 
 ---
@@ -91,7 +101,7 @@ On Windows, you can also use:
 py main.py
 ```
 
-> **Note:** The SQLite database file (`store.db`) is automatically initialized on the first run using `database/schema.sql`.
+> **Note:** The SQLite database file (`inventory.db`) is stored in the `data/` directory. The database initialization process uses `database/schema.sql`.
 
 ---
 
