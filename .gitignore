@@ -1,0 +1,17 @@
+# Python cache files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual Environment
+venv/
+.venv/
+env/
+
+# SQLite Database Files (Keep schema.sql, ignore generated databases)
+*.db
+*.sqlite3
+
+# IDE settings
+.vscode/
+.idea/
